@@ -7,34 +7,3 @@ header {
     }
   }
 }
-
-mat-toolbar {
-  background-color: aliceblue;
-}
-
-mat-sidenav-container {
-  position: absolute;
-  top: 64px;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-
-mat-sidenav {
-  width: 200px;
-  background-color: aliceblue;
-  border-right: 1px solid #dbdbdb;
-}
-
-mat-sidenav-content {
-  &:has(app-age-calculator) {
-    background-color: hsl(0, 0%, 95%);
-  }
-  &:has(app-qr-code) {
-    background-color: hsl(212, 45%, 89%);
-  }
-}
-
-mat-nav-list {
-  padding: 0;
-}
