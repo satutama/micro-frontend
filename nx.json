@@ -56,6 +56,5 @@
       "unitTestRunner": "jest"
     }
   },
-  "defaultProject": "ng-mf",
-  "nxCloudAccessToken": "OGU0MjQyNjktZjYzNi00YTY1LWFiMWYtZWEyZjc4ODNmNmRhfHJlYWQtd3JpdGU="
+  "nxCloudAccessToken": "ZDk5ZmQ1ZDctOTRhYy00ZGE2LTg2YjAtOGFjNzY5YjU0NWFifHJlYWQtd3JpdGU="
 }

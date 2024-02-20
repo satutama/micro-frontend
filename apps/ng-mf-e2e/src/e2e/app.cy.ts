@@ -1,6 +1,6 @@
 import { getGreeting } from '../support/app.po';
 
-describe('e2e', () => {
+describe('ng-mf-e2e', () => {
   beforeEach(() => cy.visit('/'));
 
   it('should display welcome message', () => {

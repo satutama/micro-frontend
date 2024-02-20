@@ -1,29 +1,24 @@
 {
   "name": "ng-mf",
-  "$schema": "node_modules/nx/schemas/project-schema.json",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
   "prefix": "ng-mf",
-  "sourceRoot": "./src",
+  "sourceRoot": "apps/ng-mf/src",
   "tags": [],
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:application",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/ng-mf",
-        "index": "./src/index.html",
-        "browser": "./src/main.ts",
+        "outputPath": "dist/apps/ng-mf",
+        "index": "apps/ng-mf/src/index.html",
+        "browser": "apps/ng-mf/src/main.ts",
         "polyfills": ["zone.js"],
-        "tsConfig": "./tsconfig.app.json",
+        "tsConfig": "apps/ng-mf/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
-        "assets": ["./src/favicon.ico", "./src/assets"],
-        "styles": ["./src/styles.scss"],
-        "scripts": [],
-        "server": "src/main.server.ts",
-        "prerender": true,
-        "ssr": {
-          "entry": "server.ts"
-        }
+        "assets": ["apps/ng-mf/src/favicon.ico", "apps/ng-mf/src/assets"],
+        "styles": ["apps/ng-mf/src/styles.scss"],
+        "scripts": []
       },
       "configurations": {
         "production": {
@@ -71,7 +66,7 @@
       "executor": "@nx/web:file-server",
       "options": {
         "buildTarget": "ng-mf:build",
-        "staticFilePath": "dist/ng-mf/browser"
+        "staticFilePath": "dist/apps/ng-mf/browser"
       }
     }
   }
