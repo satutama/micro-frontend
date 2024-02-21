@@ -20,7 +20,9 @@
           "apps/dashboard/src/favicon.ico",
           "apps/dashboard/src/assets"
         ],
-        "styles": ["apps/dashboard/src/styles.scss"],
+        "styles": [
+        "@angular/material/prebuilt-themes/deeppurple-amber.css",
+        "apps/dashboard/src/styles.scss"],
         "scripts": [],
         "customWebpackConfig": {
           "path": "apps/dashboard/webpack.config.ts"
@@ -60,7 +62,10 @@
       "executor": "@nx/angular:module-federation-dev-server",
       "options": {
         "port": 4200,
-        "publicHost": "http://localhost:4200"
+        "publicHost": "http://localhost:4200",
+        "devRemotes": [
+          "qr-scanner"
+        ]
       },
       "configurations": {
         "production": {

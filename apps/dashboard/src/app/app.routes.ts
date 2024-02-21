@@ -3,8 +3,8 @@ import { NxWelcomeComponent } from './nx-welcome.component';
 
 export const appRoutes: Route[] = [
   {
-    path: 'qr-scanner',
-    title: 'QR scanner',
+    path: 'qr-code',
+    title: 'QR code',
     loadChildren: () => import('qr-scanner/Routes').then((m) => m.remoteRoutes),
   },
   {

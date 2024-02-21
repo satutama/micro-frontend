@@ -1,4 +1,4 @@
-<mat-toolbar class="!bg-emerald-100">
+<mat-toolbar class="!bg-sky-100">
   <header class="flex items-center">
     <button mat-icon-button [ngClass]="{ opened: sidenav.opened }" (click)="sidenav.toggle()">
       <mat-icon>menu</mat-icon>
@@ -10,7 +10,7 @@
 
 <mat-sidenav-container class="!min-h-[calc(100vh-50px)]">
   <mat-sidenav #sidenav mode="over" closed class="!bg-slate-100 !w-52 border-r border-slate-200">
-    <mat-nav-list *ngFor="let route of routes">
+    <mat-nav-list *ngFor="let route of routes" class="!p-0">
       <a mat-list-item [routerLink]="route.path" disableRipple="true" routerLinkActive="active">
         {{ route.title }}
       </a>
