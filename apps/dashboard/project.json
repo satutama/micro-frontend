@@ -65,7 +65,8 @@
         "publicHost": "http://localhost:4200",
         "devRemotes": [
           "qr-scanner"
-        ]
+        ],
+        "proxyConfig":"apps/dashboard/proxy.conf.json"
       },
       "configurations": {
         "production": {
