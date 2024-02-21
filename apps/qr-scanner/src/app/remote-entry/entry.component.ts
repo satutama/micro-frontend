@@ -1,11 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { NxWelcomeComponent } from './nx-welcome.component';
+import { QrCodeComponent } from '../qr-code/qr-code.component';
 
 @Component({
   standalone: true,
-  imports: [CommonModule, NxWelcomeComponent],
+  imports: [CommonModule, QrCodeComponent],
   selector: 'ng-mf-qr-scanner-entry',
-  template: `<ng-mf-nx-welcome></ng-mf-nx-welcome>`,
+  template: `<ng-mf-qr-code></ng-mf-qr-code>`,
 })
 export class RemoteEntryComponent {}
