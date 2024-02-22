@@ -9,9 +9,6 @@ module.exports = {
   ],
   theme: {
     extend: {},
-    fontFamily: {
-      'outfit': ['"Outfit"', 'Arial', 'sans-serif']
-    }
   },
   plugins: [],
 };

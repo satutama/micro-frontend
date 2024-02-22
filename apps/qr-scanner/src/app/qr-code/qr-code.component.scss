@@ -1,36 +1,10 @@
-.container {
-  display: flex;
-  flex-direction: column;
-
-  text-align: center;
-  padding: 12px 12px 28px 12px;
-  width: 200px;
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+@font-face {
+  font-family: 'Outfit';
+  src: url('/assets/qr-code/Outfit-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
-img {
-  border-radius: 10px;
-  width: 100%;
-  height: auto;
-}
-
-.text-container {
-  display: flex;
-  font-size: 15px;
-  flex-direction: column;
-  padding: 0 16px;
-
-  .title {
-    font-weight: 700;
-    margin: 20px 0 0 0;
-  }
-
-  .subtitle {
-    font-weight: 400;
-    font-size: 10px;
-    margin: 12px 0 0 0;
-    color: hsl(220, 15%, 55%);
-  }
+:host {
+  font-family: 'Outfit';
 }

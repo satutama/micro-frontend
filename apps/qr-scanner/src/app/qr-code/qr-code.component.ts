@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
   template: `
     <div class="min-h-[100vh] pt-24 bg-[#d6e2f0]">
       <div
-        class="flex flex-col w-52 px-3 pt-3 pb-5 bg-white mx-auto font-outfit text-center rounded-lg shadow-md"
+        class="flex flex-col w-52 px-3 pt-3 pb-5 bg-white mx-auto text-center rounded-lg shadow-md"
       >
         <img
           class="rounded-lg"
@@ -26,5 +26,6 @@ import { Component } from '@angular/core';
       </div>
     </div>
   `,
+  styleUrl: './qr-code.component.scss',
 })
 export class QrCodeComponent {}
