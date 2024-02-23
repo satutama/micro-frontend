@@ -1,3 +1,12 @@
+/*!! THIS FILE IS A WORK AROUND
+  Problem is that when the component styling is placed in the global styles
+  the host (dashboard component) is not rendering the font or the styles correctly
+
+  @font-face should be placed in the global styles.scss
+  and the font-family of the :host should not be set here.
+  tailwind.config.js should be extended to have Outfit font.
+  And we can use it in the template class as font-outfit. */
+
 @font-face {
   font-family: 'Outfit';
   src: url('/assets/qr-code/Outfit-Regular.ttf') format('truetype');
