@@ -1,13 +1,15 @@
 @font-face {
   font-family: 'WorkSans-Italic';
-  src: url('/assets/WorkSans-Italic-VariableFont_wght.ttf') format('truetype');
+  src: url('/assets/accordion/WorkSans-Italic-VariableFont_wght.ttf')
+    format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'WorkSans';
-  src: url('/assets/WorkSans-VariableFont_wght.ttf') format('truetype');
+  src: url('/assets/accordion/WorkSans-VariableFont_wght.ttf')
+    format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -16,7 +18,7 @@
   height: 100%;
   padding: 0 16px;
   background-color: hsl(275, 100%, 97%);
-  background-image: url('/assets/background-pattern-desktop.svg');
+  background-image: url('/assets/accordion/background-pattern-desktop.svg');
   background-position: top;
   background-repeat: no-repeat;
   background-size: 100%;

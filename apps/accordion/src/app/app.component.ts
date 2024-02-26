@@ -34,7 +34,7 @@ const FAQS = [
         class="relative top-52 my-0 mx-auto p-6 min-w-[280px] max-w-[500px] bg-white rounded-xl shadow"
       >
         <section class="flex">
-          <img src="assets/icons/icon-star.svg" />
+          <img src="assets/accordion/icon-star.svg" />
 
           <h2 class="my-0 mx-3 text-5xl font-bold">FAQs</h2>
         </section>
