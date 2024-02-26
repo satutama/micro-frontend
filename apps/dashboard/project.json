@@ -64,7 +64,8 @@
         "port": 4200,
         "publicHost": "http://localhost:4200",
         "devRemotes": [
-          "qr-scanner"
+          "qr-scanner",
+          "accordion"
         ],
         "proxyConfig":"apps/dashboard/proxy.conf.json"
       },

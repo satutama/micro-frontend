@@ -1,11 +1,11 @@
-import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { NxWelcomeComponent } from './nx-welcome.component';
+import { Component } from '@angular/core';
+import { AccordionComponent } from '../app.component';
 
 @Component({
   standalone: true,
-  imports: [CommonModule, NxWelcomeComponent],
+  imports: [CommonModule, AccordionComponent],
   selector: 'ng-mf-accordion-entry',
-  template: `<ng-mf-nx-welcome></ng-mf-nx-welcome>`,
+  template: `<ng-mf-accordion></ng-mf-accordion>`,
 })
 export class RemoteEntryComponent {}
