@@ -14,7 +14,7 @@ const config: ModuleFederationConfig = {
    * declare module 'my-external-remote';
    *
    */
-  remotes: ['qr-scanner'],
+  remotes: ['qr-scanner', 'accordion'],
 };
 
 export default config;
