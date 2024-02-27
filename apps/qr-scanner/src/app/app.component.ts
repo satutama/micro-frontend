@@ -26,6 +26,6 @@ import { Component } from '@angular/core';
       </div>
     </div>
   `,
-  styleUrl: './qr-code.component.scss',
+  styleUrl: './app.component.scss',
 })
 export class QrCodeComponent {}

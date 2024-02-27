@@ -16,9 +16,7 @@
     "baseUrl": ".",
     "paths": {
       "accordion/Routes": ["apps/accordion/src/app/app.routes.ts"],
-      "qr-scanner/Routes": [
-        "apps/qr-scanner/src/app/remote-entry/entry.routes.ts"
-      ]
+      "qr-scanner/Routes": ["apps/qr-scanner/src/app/app.routes.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
