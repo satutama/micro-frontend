@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { QrCodeComponent } from '../qr-code/qr-code.component';
+import { QrCodeComponent } from '../app.component';
 
 @Component({
   standalone: true,

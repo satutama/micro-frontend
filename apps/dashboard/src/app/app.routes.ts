@@ -5,7 +5,7 @@ export const appRoutes: Route[] = [
   {
     path: 'accordion',
     title: 'Accordion',
-    loadChildren: () => import('accordion/Routes').then((m) => m.remoteRoutes),
+    loadChildren: () => import('accordion/Routes').then((m) => m.appRoutes),
   },
   {
     path: 'qr-code',
