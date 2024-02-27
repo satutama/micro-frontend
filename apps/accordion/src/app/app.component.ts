@@ -31,7 +31,7 @@ const FAQS = [
   template: `
     <div class="shell min-h-[100vh] px-4">
       <div
-        class="relative top-20 my-0 mx-auto p-6 min-w-[280px] max-w-[500px] bg-white rounded-xl shadow"
+        class="relative top-28 my-0 mx-auto p-6 min-w-[280px] max-w-[500px] bg-white rounded-xl shadow"
       >
         <section class="flex">
           <img src="assets/accordion/icon-star.svg" />
