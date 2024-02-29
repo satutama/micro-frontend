@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   template: `
-    <div class="min-h-[100vh] pt-24 bg-[#d6e2f0]">
+    <div class="min-h-[calc(100vh-4rem)] pt-24 bg-[#d6e2f0] mt">
       <div
         class="flex flex-col w-52 px-3 pt-3 pb-5 bg-white mx-auto text-center rounded-lg shadow-md"
       >
