@@ -29,7 +29,7 @@ const FAQS = [
   standalone: true,
   imports: [CommonModule],
   template: `
-    <div class="shell min-h-[100vh] px-4">
+    <div class="shell min-h-[calc(100vh-64px)] px-4">
       <div
         class="relative top-28 my-0 mx-auto p-6 min-w-[280px] max-w-[500px] bg-white rounded-xl shadow"
       >
