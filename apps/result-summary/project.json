@@ -1,31 +1,29 @@
 {
-  "name": "dashboard",
+  "name": "result-summary",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
   "prefix": "ng-mf",
-  "sourceRoot": "apps/dashboard/src",
+  "sourceRoot": "apps/result-summary/src",
   "tags": [],
   "targets": {
     "build": {
       "executor": "@nx/angular:webpack-browser",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/apps/dashboard",
-        "index": "apps/dashboard/src/index.html",
-        "main": "apps/dashboard/src/main.ts",
+        "outputPath": "dist/apps/result-summary",
+        "index": "apps/result-summary/src/index.html",
+        "main": "apps/result-summary/src/main.ts",
         "polyfills": ["zone.js"],
-        "tsConfig": "apps/dashboard/tsconfig.app.json",
+        "tsConfig": "apps/result-summary/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
         "assets": [
-          "apps/dashboard/src/favicon.ico",
-          "apps/dashboard/src/assets"
+          "apps/result-summary/src/favicon.ico",
+          "apps/result-summary/src/assets"
         ],
-        "styles": [
-        "@angular/material/prebuilt-themes/deeppurple-amber.css",
-        "apps/dashboard/src/styles.scss"],
+        "styles": ["apps/result-summary/src/styles.scss"],
         "scripts": [],
         "customWebpackConfig": {
-          "path": "apps/dashboard/webpack.config.ts"
+          "path": "apps/result-summary/webpack.config.ts"
         }
       },
       "configurations": {
@@ -44,7 +42,7 @@
           ],
           "outputHashing": "all",
           "customWebpackConfig": {
-            "path": "apps/dashboard/webpack.prod.config.ts"
+            "path": "apps/result-summary/webpack.prod.config.ts"
           }
         },
         "development": {
@@ -59,23 +57,17 @@
       "defaultConfiguration": "production"
     },
     "serve": {
-      "executor": "@nx/angular:module-federation-dev-server",
+      "executor": "@nx/angular:dev-server",
       "options": {
-        "port": 4200,
-        "publicHost": "http://localhost:4200",
-        "devRemotes": [
-          "qr-scanner",
-          "accordion",
-          "result-summary"
-        ],
-        "proxyConfig":"apps/dashboard/proxy.conf.json"
+        "port": 4203,
+        "publicHost": "http://localhost:4203"
       },
       "configurations": {
         "production": {
-          "buildTarget": "dashboard:build:production"
+          "buildTarget": "result-summary:build:production"
         },
         "development": {
-          "buildTarget": "dashboard:build:development"
+          "buildTarget": "result-summary:build:development"
         }
       },
       "defaultConfiguration": "development"
@@ -83,14 +75,24 @@
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
       "options": {
-        "buildTarget": "dashboard:build"
+        "buildTarget": "result-summary:build"
       }
     },
     "serve-static": {
       "executor": "@nx/web:file-server",
+      "defaultConfiguration": "production",
       "options": {
-        "buildTarget": "dashboard:build",
-        "port": 4200
+        "buildTarget": "result-summary:build",
+        "port": 4203,
+        "watch": false
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "result-summary:build:development"
+        },
+        "production": {
+          "buildTarget": "result-summary:build:production"
+        }
       }
     }
   }

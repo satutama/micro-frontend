@@ -4,7 +4,11 @@
         "secure": false
     },
     "/assets/accordion":{
-      "target": "http://localhost:4202",
-      "secure": false
+        "target": "http://localhost:4202",
+        "secure": false
+    },
+    "/assets/result-summary":{
+        "target": "http://localhost:4203",
+        "secure": false
   }
 }
