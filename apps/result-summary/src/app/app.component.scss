@@ -1,6 +1,15 @@
+@font-face {
+  font-family: 'Hanken';
+  src: url('/assets/result-summary/HankenGrotesk-VariableFont_wght.ttf')
+    format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 :host {
   display: flex;
   justify-content: center;
+  font-family: Hanken;
 }
 
 .result {
