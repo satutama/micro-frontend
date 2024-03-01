@@ -1,31 +1,29 @@
 {
-  "name": "dashboard",
+  "name": "age-calculator",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
   "prefix": "ng-mf",
-  "sourceRoot": "apps/dashboard/src",
+  "sourceRoot": "apps/age-calculator/src",
   "tags": [],
   "targets": {
     "build": {
       "executor": "@nx/angular:webpack-browser",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/apps/dashboard",
-        "index": "apps/dashboard/src/index.html",
-        "main": "apps/dashboard/src/main.ts",
+        "outputPath": "dist/apps/age-calculator",
+        "index": "apps/age-calculator/src/index.html",
+        "main": "apps/age-calculator/src/main.ts",
         "polyfills": ["zone.js"],
-        "tsConfig": "apps/dashboard/tsconfig.app.json",
+        "tsConfig": "apps/age-calculator/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
         "assets": [
-          "apps/dashboard/src/favicon.ico",
-          "apps/dashboard/src/assets"
+          "apps/age-calculator/src/favicon.ico",
+          "apps/age-calculator/src/assets"
         ],
-        "styles": [
-        "@angular/material/prebuilt-themes/deeppurple-amber.css",
-        "apps/dashboard/src/styles.scss"],
+        "styles": ["apps/age-calculator/src/styles.scss"],
         "scripts": [],
         "customWebpackConfig": {
-          "path": "apps/dashboard/webpack.config.ts"
+          "path": "apps/age-calculator/webpack.config.ts"
         }
       },
       "configurations": {
@@ -44,7 +42,7 @@
           ],
           "outputHashing": "all",
           "customWebpackConfig": {
-            "path": "apps/dashboard/webpack.prod.config.ts"
+            "path": "apps/age-calculator/webpack.prod.config.ts"
           }
         },
         "development": {
@@ -59,24 +57,17 @@
       "defaultConfiguration": "production"
     },
     "serve": {
-      "executor": "@nx/angular:module-federation-dev-server",
+      "executor": "@nx/angular:dev-server",
       "options": {
-        "port": 4200,
-        "publicHost": "http://localhost:4200",
-        "devRemotes": [
-          "qr-scanner",
-          "accordion",
-          "result-summary",
-          "age-calculator"
-        ],
-        "proxyConfig":"apps/dashboard/proxy.conf.json"
+        "port": 4204,
+        "publicHost": "http://localhost:4204"
       },
       "configurations": {
         "production": {
-          "buildTarget": "dashboard:build:production"
+          "buildTarget": "age-calculator:build:production"
         },
         "development": {
-          "buildTarget": "dashboard:build:development"
+          "buildTarget": "age-calculator:build:development"
         }
       },
       "defaultConfiguration": "development"
@@ -84,14 +75,24 @@
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
       "options": {
-        "buildTarget": "dashboard:build"
+        "buildTarget": "age-calculator:build"
       }
     },
     "serve-static": {
       "executor": "@nx/web:file-server",
+      "defaultConfiguration": "production",
       "options": {
-        "buildTarget": "dashboard:build",
-        "port": 4200
+        "buildTarget": "age-calculator:build",
+        "port": 4204,
+        "watch": false
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "age-calculator:build:development"
+        },
+        "production": {
+          "buildTarget": "age-calculator:build:production"
+        }
       }
     }
   }

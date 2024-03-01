@@ -16,6 +16,9 @@
     "baseUrl": ".",
     "paths": {
       "accordion/Routes": ["apps/accordion/src/app/app.routes.ts"],
+      "age-calculator/Routes": [
+        "apps/age-calculator/src/app/remote-entry/entry.routes.ts"
+      ],
       "qr-scanner/Routes": ["apps/qr-scanner/src/app/app.routes.ts"],
       "result-summary/Routes": ["apps/result-summary/src/app/app.routes.ts"]
     }
