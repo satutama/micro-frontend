@@ -3,6 +3,20 @@ $purple: hsl(259, 100%, 65%);
 $light-red: hsl(0, 100%, 67%);
 $off-black: hsl(0, 0%, 8%);
 
+@font-face {
+  font-family: 'Poppins';
+  src: url('/assets/age-calculator/Poppins-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins-Bold';
+  src: url('/assets/age-calculator/Poppins-ExtraBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 :host {
   display: block;
   margin: 100px auto;
@@ -87,7 +101,7 @@ $off-black: hsl(0, 0%, 8%);
   }
 
   .button {
-    background-image: url('https://satutama.github.io/fe-challenges/assets/icons/icon-arrow.svg');
+    background-image: url('/assets/age-calculator/icon-arrow.svg');
     background-size: 36px;
     background-repeat: no-repeat;
     background-position: center;
@@ -132,4 +146,16 @@ $off-black: hsl(0, 0%, 8%);
       padding: 0 16px;
     }
   }
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
 }
