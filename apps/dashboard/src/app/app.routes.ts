@@ -3,11 +3,6 @@ import { NxWelcomeComponent } from './nx-welcome.component';
 
 export const appRoutes: Route[] = [
   {
-    path: 'age-calculator',
-    loadChildren: () =>
-      import('age-calculator/Routes').then((m) => m.appRoutes),
-  },
-  {
     path: 'qr-code',
     title: 'QR code',
     loadChildren: () => import('qr-scanner/Routes').then((m) => m.appRoutes),
@@ -22,6 +17,12 @@ export const appRoutes: Route[] = [
     title: 'Result Summary',
     loadChildren: () =>
       import('result-summary/Routes').then((m) => m.appRoutes),
+  },
+  {
+    path: 'age-calculator',
+    title: 'Age calculator',
+    loadChildren: () =>
+      import('age-calculator/Routes').then((m) => m.appRoutes),
   },
   {
     path: '',
