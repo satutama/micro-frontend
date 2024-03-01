@@ -5,7 +5,7 @@ export const appRoutes: Route[] = [
   {
     path: 'age-calculator',
     loadChildren: () =>
-      import('age-calculator/Routes').then((m) => m.remoteRoutes),
+      import('age-calculator/Routes').then((m) => m.appRoutes),
   },
   {
     path: 'qr-code',

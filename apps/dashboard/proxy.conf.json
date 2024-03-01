@@ -10,5 +10,9 @@
     "/assets/result-summary":{
         "target": "http://localhost:4203",
         "secure": false
-  }
+    },
+      "/assets/age-calculator":{
+        "target": "http://localhost:4204",
+        "secure": false
+    }
 }
